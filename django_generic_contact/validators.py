@@ -6,6 +6,8 @@ from django.core.validators import BaseValidator
 class JSONSchemaValidator(BaseValidator):
     def compare(self, value, schema):
         try:
-            jsonschema.validate(value, schema, format_checker=jsonschema.draft202012_format_checker)
+            jsonschema.validate(
+                value, schema, format_checker=jsonschema.draft202012_format_checker
+            )
         except jsonschema.exceptions.ValidationError as e:
             raise ValidationError(str(e))

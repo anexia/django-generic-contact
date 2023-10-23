@@ -1,5 +1,9 @@
 ## Django Generic Contact
 
+[![PyPI version](https://img.shields.io/pypi/v/django-generic-contact.svg)](https://pypi.org/project/django-generic-contact/)
+[![Run linter and tests](https://github.com/anexia/django-generic-contact/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/anexia/django-generic-contact/actions/workflows/test.yml)
+[![Codecov](https://img.shields.io/codecov/c/gh/anexia/django-generic-contact)](https://codecov.io/gh/anexia/django-generic-contact)
+
 Django module to store contact request in a structured yet generic manner within the database.
 
 ### Installation

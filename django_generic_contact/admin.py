@@ -1,5 +1,6 @@
 from django import forms
 from django.contrib import admin
+
 from django_generic_contact.models import Contact
 from django_generic_contact.utils import get_help_text, get_validators
 

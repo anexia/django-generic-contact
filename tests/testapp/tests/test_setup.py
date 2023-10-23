@@ -1,6 +1,5 @@
-from django.test import SimpleTestCase
-
 from django.conf import settings
+from django.test import SimpleTestCase
 
 
 class TestSetup(SimpleTestCase):

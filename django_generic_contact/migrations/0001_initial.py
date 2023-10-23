@@ -4,7 +4,6 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = []
@@ -13,8 +12,21 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name="Contact",
             fields=[
-                ("id", models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name="ID")),
-                ("creation_date", models.DateTimeField(auto_now_add=True, verbose_name="Creation date")),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                (
+                    "creation_date",
+                    models.DateTimeField(
+                        auto_now_add=True, verbose_name="Creation date"
+                    ),
+                ),
                 ("data", models.JSONField(default=dict, verbose_name="meta data")),
                 ("name", models.CharField(max_length=255, verbose_name="name")),
                 ("message", models.TextField(verbose_name="message")),
