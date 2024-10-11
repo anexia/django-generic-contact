@@ -24,7 +24,8 @@ class Migration(migrations.Migration):
                 (
                     "creation_date",
                     models.DateTimeField(
-                        auto_now_add=True, verbose_name="Creation date"
+                        auto_now_add=True,
+                        verbose_name="Creation date",
                     ),
                 ),
                 ("data", models.JSONField(default=dict, verbose_name="meta data")),

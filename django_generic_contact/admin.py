@@ -7,7 +7,7 @@ from django_generic_contact.utils import get_help_text, get_validators
 
 class ContactAdminForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
-        super(ContactAdminForm, self).__init__(*args, **kwargs)
+        super().__init__(*args, **kwargs)
         self.fields["data"].help_text = get_help_text()
         self.fields["data"].validators = get_validators()
 

@@ -1,15 +1,15 @@
 # Package and package dependencies
 -e .
-
-# Development dependencies
-setuptools>=75.1.0,<76.2
-wheel>=0.44.0,<0.45
-twine>=5.1.1,<5.2
 coverage>=7.6.2,<7.7
-
-# Linters and formatters
-pre-commit>=4.0.1,<4.2
 
 # TestApp dependencies
 django>=4.2,<5.2
 jsonschema>=4.23.0,<4.24
+
+# Linters and formatters
+pre-commit>=4.0.1,<4.2
+
+# Development dependencies
+setuptools>=75.1.0,<76.2
+twine>=5.1.1,<5.2
+wheel>=0.44.0,<0.45

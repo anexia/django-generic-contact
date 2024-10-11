@@ -8,7 +8,9 @@ class JSONSchemaValidator(BaseValidator):
     def compare(self, value, schema):
         try:
             jsonschema.validate(
-                value, schema, format_checker=Draft202012Validator.FORMAT_CHECKER
+                value,
+                schema,
+                format_checker=Draft202012Validator.FORMAT_CHECKER,
             )
         except jsonschema.exceptions.ValidationError as e:
             raise ValidationError(str(e))

@@ -26,7 +26,7 @@ INSTALLED_APPS = [
 
 ### Usage
 
-The package provides you with a `Contact` model which expects `data` (dict) and the `name` of the requester, 
+The package provides you with a `Contact` model which expects `data` (dict) and the `name` of the requester,
 an optional `message` can be added:
 
 ```
@@ -44,7 +44,7 @@ contact = Contact.objects.create(
 
 #### JSON Schema validation
 
-The contents of `data` will be validated against a [json schema](https://json-schema.org/) defined in your project's 
+The contents of `data` will be validated against a [json schema](https://json-schema.org/) defined in your project's
 `settings.py` (if provided). If needed you can define `GENERIC_CONTACT_DATA_SCHEMA` to check all relevant input
 according to the expected structure, e.g.:
 
@@ -77,14 +77,14 @@ class CustomContact(GenericContact):
 
 See folder [tests/](tests/). The provided tests cover these criteria:
 * success:
-  * Contact model instance creation 
+  * Contact model instance creation
   * project's jsonschema validation
 * failure:
   * project's jsonschema validation
   * exemplary custom jsonschema validation
 
 Follow below instructions to run the tests.
-You may exchange the installed Django and DRF versions according to your requirements. 
+You may exchange the installed Django and DRF versions according to your requirements.
 :warning: Depending on your local environment settings you might need to explicitly call `python3` instead of `python`.
 ```bash
 # install dependencies
