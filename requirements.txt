@@ -2,14 +2,14 @@
 -e .
 
 # Development dependencies
-setuptools>=68.2.2,<68.3
-wheel>=0.41.2,<0.42
-twine>=4.0.2,<4.1
-coverage>=7.3.2,<7.4
+setuptools>=75.1.0,<76.2
+wheel>=0.44.0,<0.45
+twine>=5.1.1,<5.2
+coverage>=7.6.2,<7.7
 
 # Linters and formatters
-pre-commit>=3.5.0,<3.6
+pre-commit>=4.0.1,<4.2
 
 # TestApp dependencies
-django>=3.2,<4.3
-jsonschema>=4.19.1,<4.20
+django>=4.2,<5.2
+jsonschema>=4.23.0,<4.24
