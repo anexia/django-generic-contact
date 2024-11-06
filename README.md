@@ -62,7 +62,7 @@ GENERIC_CONTACT_DATA_SCHEMA = {
 See more examples of `GENERIC_CONTACT_DATA_SCHEMA` in `tests/testapp/tests/test_model.py`.
 
 #### Customizing the Contact model
-The base model `GenericContact` only requires the `data`. Thus you can let your own models inherit from this and extend
+The base model `GenericContact` only requires the `data`. Thus, you can let your own models inherit from this and extend
 it according to your project's needs, e.g.:
 
 ```
