@@ -26,7 +26,7 @@ class TestJsonSchema(TestCase):
             {
                 "email": "mr@tester.com",
                 "not_validated_phone": "+431234567",
-            }
+            },
         )
 
     def test_failed_jsonschema_validation_invalid_email(self):
@@ -43,7 +43,7 @@ class TestJsonSchema(TestCase):
                 {
                     "email": "invalid_email",
                     "not_validated_phone": "+431234567",
-                }
+                },
             )
 
     def test_failed_jsonschema_validation_additional_fields(self):
@@ -68,5 +68,5 @@ class TestJsonSchema(TestCase):
                 {
                     "email": "mr@tester.com",
                     "phone": "+431234567",
-                }
+                },
             )

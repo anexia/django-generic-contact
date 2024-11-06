@@ -6,7 +6,7 @@ from django_generic_contact.validators import JSONSchemaValidator
 
 def get_help_text():
     return _("Meta data according to Schema: {schema}").format(
-        schema=GENERIC_CONTACT_DATA_SCHEMA
+        schema=GENERIC_CONTACT_DATA_SCHEMA,
     )
 
 
