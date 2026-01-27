@@ -9,6 +9,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -19,13 +21,11 @@ jobs:
     - name: Install dependencies and package
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install -e .[dev]
 
     - name: Build source and binary distribution package
       run: |
-        python setup.py sdist bdist_wheel
-      env:
-        PACKAGE_VERSION: ${{ github.ref }}
+        python -m build
 
     - name: Check distribution package
       run: |

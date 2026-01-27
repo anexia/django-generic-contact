@@ -6,6 +6,10 @@
 
 Django module to store contact request in a structured yet generic manner within the database.
 
+Supported versions (from endoflife.date):
+- Python: 3.10, 3.11, 3.12, 3.13, 3.14
+- Django: 4.2 (LTS), 5.2 (LTS), 6.0
+
 ### Installation
 
 1. Install using pip:
@@ -89,10 +93,7 @@ You may exchange the installed Django and DRF versions according to your require
 ```bash
 # install dependencies
 python -m pip install --upgrade pip
-pip install -r requirements.txt
-
-# setup environment
-pip install -e .
+pip install -e .[dev]
 
 # run tests
 cd tests && python manage.py test
