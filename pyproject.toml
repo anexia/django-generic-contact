@@ -55,9 +55,4 @@ include-package-data = true
 where = ["."]
 include = ["django_generic_contact*"]
 
-[tool.setuptools.dynamic]
-version = {attr = "django_generic_contact.__version__"}
-
 [tool.setuptools_scm]
-version_scheme = "release-branch-semver"
-local_scheme = "no-local-version"
