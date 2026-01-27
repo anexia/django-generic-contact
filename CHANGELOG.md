@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.2.0]
+
+### Added
+- Build metadata in `pyproject.toml` with optional `dev` dependencies
+- Tag-based versioning via `setuptools-scm`
+- Support for Python 3.14
+- Support for Django 5.2 and 6.0
+
+### Changed
+- Packaging migrated from `setup.py` to `pyproject.toml`
+- Build/publish tooling now uses `python -m build`
+
+### Removed
+- `requirements.txt` in favor of `pyproject.toml` dependencies
+- Support for Python 3.9
+- Support for Django 5.0 and 5.1
+
 ## [1.1.0]
 
 ### Added
@@ -19,6 +36,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Initial setup
 
-[Unreleased]: https://github.com/anexia/django-generic-contact/compare/1.1.0...HEAD
+[Unreleased]: https://github.com/anexia/django-generic-contact/compare/1.2.0...HEAD
+[1.2.0]: https://github.com/anexia/django-generic-contact/compare/1.1.0...1.2.0
 [1.1.0]: https://github.com/anexia/django-generic-contact/compare/1.0.0...1.1.0
 [1.0.0]: https://github.com/anexia/django-generic-contact/releases/tag/1.0.0
